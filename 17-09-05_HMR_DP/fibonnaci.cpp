@@ -5,10 +5,10 @@
 #include <algorithm>
 using namespace std;
 
-int memo[1000];
+int memo[1000];			///array decleration
 
 int fib(int n){
-	if (n == 0) return 0;
+	if (n == 0) return 1;	/// 0! is 1
 	if (n == 1) return 1;
 	if (memo[n] != -1){
 		//already computed
